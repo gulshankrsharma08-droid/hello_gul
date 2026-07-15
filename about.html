@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World! </title>
+    <title>About Me - Gulshan Kumar</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&display=swap');
 
@@ -58,12 +58,7 @@
             transform: translateY(30px);
             opacity: 0;
             animation: slide-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(0) scale(1.02);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            max-width: 600px;
         }
 
         @keyframes slide-up {
@@ -74,7 +69,7 @@
         }
 
         h1 {
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: 900;
             margin: 0;
             letter-spacing: -2px;
@@ -82,53 +77,15 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 0 40px rgba(58, 123, 213, 0.3);
-            position: relative;
         }
 
         p {
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             font-weight: 300;
-            color: rgba(255, 255, 255, 0.6);
-            margin-top: 1rem;
-            letter-spacing: 1px;
-        }
-
-        /* Subtle interactive button */
-        .btn {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 12px 32px;
-            border-radius: 50px;
-            background: linear-gradient(90deg, #3a7bd5, #00d2ff);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .btn:hover::before {
-            left: 100%;
-        }
-
-        .btn:hover {
-            box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
-            transform: translateY(-2px);
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1.5rem;
+            letter-spacing: 0.5px;
+            line-height: 1.6;
         }
 
         /* Navigation */
@@ -163,17 +120,16 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
         <a href="contact.html">Contact</a>
     </nav>
     <div class="glow"></div>
     <div class="glow"></div>
     
     <div class="card">
-        <h1>Hello, World!</h1>
-        <p>A beautiful beginning to something amazing.</p>
-        <button class="btn" onclick="this.innerHTML='Awesome!'">Explore</button>
+        <h1>About Me</h1>
+        <p>Hi, I'm Gulshan Kumar. I am passionate about creating beautiful and functional web applications. I love exploring new technologies and pushing the boundaries of web design.</p>
     </div>
 </body>
 </html>
